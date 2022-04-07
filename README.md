@@ -1,19 +1,35 @@
-Как запустить проект:
-Клонировать репозиторий и перейти в него в командной строке:
+# API для YATUBE
 
-git clone https://github.com/yandex-praktikum/kittygram.git
-cd kittygram
-Cоздать и активировать виртуальное окружение:
+Проект позволяет использовать функционал сервиса Yatube без посещения сайта. Реализована возможность просматривать, добавлять, редактировать и удалять посты, группы, комментарии, подписываться на авторов.
+
+Полностью функционал доступен ***только аутентифицированному*** пользователю.
+
+## Запуск проекта:
+
+* Клонируем репозиторий:
+
+git clone https://github.com/Helga61/api_final_yatube
+
+* Открываем в командной строке проект:
+
+cd api_final_yatube
+
+* Cоздаем и активируем виртуальное окружение:
 
 python -m venv venv
-source env/bin/activate
-Установить зависимости из файла requirements.txt:
+source venv/scripts/activate
+
+* Устанавливаем зависимости из файла requirements.txt:
 
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-Выполнить миграции:
+
+* Выполняем миграции:
 
 python manage.py migrate
-Запустить проект:
+
+* Запускаем проект:
 
 python manage.py runserver
+
+[Полная документация и примеры запросов](http://127.0.0.1:8000/redoc/)
